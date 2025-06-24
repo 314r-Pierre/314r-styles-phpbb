@@ -1,0 +1,631 @@
+@charset "utf-8";
+/*
+  STYLE ENFANT 314r 3.3.15 pour prosilver de phpbb 3.3.15 
+  Conçu et réalisé par 314r (Pierre)
+  Juin 2025, Québec, Canada
+  admin@314r.ca
+*/
+
+:root {
+    --color-500: rgba(217, 217, 217, 1); /*gris pale 100 - gris fonce 500*/
+    --color-400: rgba(224, 224, 224, 1);
+    --color-300: rgba(232, 232, 232, 1);
+    --color-200: rgba(240, 240, 240, 1);
+    --color-100: rgba(247, 247, 247, 1);
+    --color-bf: rgba(0, 80, 112, 1); /*bleu fonce*/
+    --color-bp: rgba(0, 99, 142, 1); /*bleu pale*/
+    --color-vert: rgba(0, 108, 27, 1);
+    --color-jf: rgba(82, 75, 2, 1); /*jaune fonce*/
+    --color-jp: rgba(102, 93, 2, 1); /*jaune pale*/
+    --color-rouge: rgba(144, 29, 3, 1);
+}
+
+hr,
+.postlink,
+.postlink:visited,
+ul.navlinks,
+.jumpbox .dropdown li,
+.jumpbox .dropdown .pointer-inner,
+ul.topiclist dd,
+.rtl ul.topiclist dd,
+li.row:hover dd,
+.rtl li.row:hover dd,
+.content h2,
+.panel h2,
+.notice,
+blockquote,
+.codebox,
+.codebox p,
+.attachbox,
+.attachbox dd,
+.attach-image img,
+dl.thumbnail img,
+dl.thumbnail dt a:hover img,
+fieldset.polls dl,
+.pollbar1,
+.rtl .pollbar1,
+.pollbar2,
+.rtl .pollbar2,
+.pollbar3,
+.rtl .pollbar3,
+.pollbar4,
+.rtl .pollbar4,
+.pollbar5,
+.rtl .pollbar5 {
+    border: none;
+}
+
+html,
+body {
+    background-color: #d2d2d2;
+    font-size: 62.5%;
+}
+
+.content {
+    background-color: var(--color-100);
+    padding: 25px 75px 50px 25px;
+}
+
+.forumbg .header a,
+.forabg .header a,
+th a {
+    color: var(--color-bf);
+    font-size: 1.3em;
+}
+
+li.header dt,
+li.header dd {
+    color: var(--color-bf);
+}
+
+.lastpost,
+.postprofile {
+    font-family: "Verdana", "Trebuchet MS", "Helvetica", sans-serif;
+    color: var(--color-jf);
+}
+
+body {
+    font-size: 1.3em;
+}
+
+.site-description > h1 {
+    color: var(--color-bf);
+    padding: 0;
+    margin-top: 0;
+    padding-left: 45px;
+}
+
+.site-description {
+    color: var(--color-jp);
+}
+
+h3 {
+    border: none;
+    color: var(--color-bp);
+}
+
+.stat-block h3 {
+    background-color: var(--color-300);
+    padding: 10px 0 10px 15px;
+}
+
+a {
+    color: var(--color-bf);
+    transition: transform 0.5s ease-in-out;
+}
+
+a:hover,
+a:active {
+    color: var(--color-vert);
+    transform: scale(0.99);
+}
+
+.list-inner a {
+    color: var(--color-rouge);
+}
+
+.forumbg .header a:hover,
+.forabg .header a:hover,
+th a:hover,
+.list-inner a:hover {
+    color: var(--color-vert);
+}
+
+.wrap {
+    background-color: var(--color-200);
+    border: none;
+    border-radius: 10px;
+    padding-top: 30px;
+    margin-top: 0;
+}
+
+.headerbar {
+    background-color: var(--color-200);
+    background-image: none;
+    margin-bottom: 0;
+    padding: 0;
+    border-radius: 0;
+}
+
+.forumbg,
+.forabg {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-color: var(--color-500);
+}
+
+.forumbg thead tr {
+    font-size: 0.9em;
+    color: var(--color-rouge);
+}
+
+.crumb {
+    background-color: #d7d7d7;
+    border-top: 1px solid var(--color-jp);
+    border-bottom: 1px solid var(--color-jp);
+}
+
+
+#nav-breadcrumbs {
+    padding-left: 10px;
+}
+
+.icon {
+    color: var(--color-jp);
+}
+
+.panel {
+    background-color: var(--color-200);
+}
+
+.agreement {
+    color: var(--color-jf);
+}
+
+.bg1 {
+    background-color: var(--color-300);
+    border-top: 1px dotted var(--color-bp);
+    border-bottom: 2px solid var(--color-bp);
+    margin-bottom: 55px;
+}
+
+.bg2 {
+    background-color: var(--color-400);
+    border-top: 1px dotted var(--color-bp);
+    border-bottom: 2px solid var(--color-bp);
+    margin-bottom: 55px;
+}
+
+.bg3 {
+    background-color: var(--color-400);
+}
+
+.site_logo {
+    background-image: url("./images/site_logo.png");
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--color-jp);
+}
+
+table.table1 thead th {
+    color: var(--color-rouge);
+}
+
+table.table1 tbody tr:hover,
+table.table1 tbody tr.hover {
+    background-color: var(--color-100);
+}
+
+.rightside {
+    border-bottom: 1px solid var(--color-jp);
+}
+
+.jumpbox-cat-link {
+    background-color: var(--color-200);
+    border: none;
+    color: var(--color-jf);
+}
+
+.jumpbox-cat-link:hover {
+    background-color: var(--color-300);
+    border: none;
+    color: var(--color-jp);
+}
+
+.jumpbox-sub-link {
+    background-color: var(--color-400);
+}
+
+.jumpbox-sub-link:hover {
+    background-color: var(--color-100);
+}
+
+ul.forums {
+    background-color: var(--color-300);
+    background-image: none;
+    filter: none;
+}
+
+li.row {
+    border-bottom: 1px dotted var(--color-jf);
+}
+
+li.row:hover {
+    background-color: var(--color-100);
+}
+
+.signature {
+    border-top: 1px dotted var(--color-bp);
+    padding: 5px 0 0 10px;
+}
+
+.button {
+    background-image: none;
+    filter: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.button:hover,
+.button:focus {
+    background-image: none;
+    filter: none;
+    text-shadow: none;
+}
+
+.tabs .tab > a {
+    background: var(--color-200);
+    color: var(--color-bp);
+}
+
+.tabs .tab > a:hover {
+    background: var(--color-400);
+}
+
+.tabs .activetab > a,
+.tabs .activetab > a:hover {
+    background-color: var(--color-400);
+    background-image: none;
+    filter: none;
+    border: 1px dotted var(--color-jf);
+    border-bottom: 1px solid var(--color-jf);
+    box-shadow: none;
+    color: var(--color-jp);
+}
+
+.navigation a {
+    background: none;
+    filter: none;
+}
+
+.rtl .navigation a {
+    background: none;
+    filter: none;
+}
+
+.navigation a:hover,
+.navigation .active-subsection a {
+    filter: none;
+}
+
+.message-box textarea {
+    background-color: var(--color-200);
+}
+
+a.button1,
+input.button1,
+input.button3,
+a.button2,
+input.button2,
+a.button1:hover,
+input.button1:hover,
+a.button2:hover,
+input.button2:hover,
+input.button3:hover,
+.dropdown-extended .header {
+    background-image: none;
+    filter: none;
+}
+
+.dropdown .dropdown-contents {
+    background: var(--color-200);
+    border-color: var(--color-bf);
+    box-shadow: none;
+}
+
+.dropdown .dropdown-contents a {
+    color: var(--color-jf);
+}
+
+.dropdown .dropdown-contents a:hover {
+    color: var(--color-vert);
+    transform: none;
+}
+
+.search-header,
+.dropdown-up .dropdown-contents {
+    box-shadow: none;
+}
+
+.dropdown li,
+.dropdown li li {
+    border-color: var(--color-jp);
+}
+
+.dropdown li.separator {
+    border-color: var(--color-jp);
+}
+
+#nav-breadcrumbs > li > span > a > span {
+    background-color: transparent;
+}
+
+/* section des icones avec un effet de diminution de grosseur */
+.global_read {
+    background-image: url("./images/announce_read.svg");
+    transition: transform 0.5s ease-in-out;
+}
+.global_read_mine {
+    background-image: url("./images/announce_read_mine.svg");
+    transition: transform 0.5s ease-in-out;
+}
+.global_read_locked {
+    background-image: url("./images/announce_read_locked.svg");
+    transition: transform 0.5s ease-in-out;
+}
+.global_read_locked_mine {
+    background-image: url("./images/announce_read_locked_mine.svg");
+    transition: transform 0.5s ease-in-out;
+}
+.global_unread {
+    background-image: url("./images/announce_unread.svg");
+    transition: transform 0.5s ease-in-out;
+}
+.global_unread_mine {
+    background-image: url("./images/announce_unread_mine.svg");
+    transition: transform 0.5s ease-in-out;
+}
+.global_unread_locked {
+    background-image: url("./images/announce_unread_locked.svg");
+    transition: transform 0.5s ease-in-out;
+}
+.global_unread_locked_mine {
+    background-image: url("./images/announce_unread_locked_mine.svg");
+    transition: transform 0.5s ease-in-out;
+}
+
+.global_read:hover,
+.global_read_mine:hover,
+.global_read_locked:hover,
+.global_read_locked_mine:hover,
+.global_unread:hover,
+.global_unread_mine:hover,
+.global_unread_locked:hover,
+.global_unread_locked_mine:hover {
+    transform: scale(0.99);
+}
+
+/**/
+.announce_read {
+    background-image: url("./images/announce_read.svg");
+    transition: transform 0.5s ease-in-out;
+}
+.announce_read_mine {
+    background-image: url("./images/announce_read_mine.svg");
+    transition: transform 0.5s ease-in-out;
+}
+.announce_read_locked {
+    background-image: url("./images/announce_read_locked.svg");
+    transition: transform 0.5s ease-in-out;
+}
+.announce_read_locked_mine {
+    background-image: url("./images/announce_read_locked_mine.svg");
+    transition: transform 0.5s ease-in-out;
+}
+.announce_unread {
+    background-image: url("./images/announce_unread.svg");
+    transition: transform 0.5s ease-in-out;
+}
+.announce_unread_mine {
+    background-image: url("./images/announce_unread_mine.svg");
+    transition: transform 0.5s ease-in-out;
+}
+.announce_unread_locked {
+    background-image: url("./images/announce_unread_locked.svg");
+    transition: transform 0.5s ease-in-out;
+}
+.announce_unread_locked_mine {
+    background-image: url("./images/announce_unread_locked_mine.svg");
+    transition: transform 0.5s ease-in-out;
+}
+
+.announce_read:hover,
+.announce_read_mine:hover,
+.announce_read_locked:hover,
+.announce_read_locked_mine:hover,
+.announce_unread:hover,
+.announce_unread_mine:hover,
+.announce_unread_locked:hover,
+.announce_unread_locked_mine:hover {
+    transform: scale(0.96);
+}
+
+/**/
+.forum_link {
+    background-image: url("./images/forum_link.svg");
+    transition: transform 0.5s ease-in-out;
+}
+.forum_read {
+    background-image: url("./images/forum_read.svg");
+    transition: transform 0.5s ease-in-out;
+}
+.forum_read_locked {
+    background-image: url("./images/forum_read_locked.svg");
+    transition: transform 0.5s ease-in-out;
+}
+.forum_read_subforum {
+    background-image: url("./images/forum_read_subforum.svg");
+    transition: transform 0.5s ease-in-out;
+}
+.forum_unread {
+    background-image: url("./images/forum_unread.svg");
+    transition: transform 0.5s ease-in-out;
+}
+.forum_unread_locked {
+    background-image: url("./images/forum_unread_locked.svg");
+    transition: transform 0.5s ease-in-out;
+}
+.forum_unread_subforum {
+    background-image: url("./images/forum_unread_subforum.svg");
+    transition: transform 0.5s ease-in-out;
+}
+
+.forum_link:hover,
+.forum_read:hover,
+.forum_read_locked:hover,
+.forum_read_subforum:hover,
+.forum_unread:hover,
+.forum_unread_locked:hover,
+.forum_unread_subforum:hover {
+    transform: scale(0.99);
+}
+
+/**/
+.sticky_read {
+    background-image: url("./images/sticky_read.svg");
+    transition: transform 0.5s ease-in-out;
+}
+.sticky_read_mine {
+    background-image: url("./images/sticky_read_mine.svg");
+    transition: transform 0.5s ease-in-out;
+}
+.sticky_read_locked {
+    background-image: url("./images/sticky_read_locked.svg");
+    transition: transform 0.5s ease-in-out;
+}
+.sticky_read_locked_mine {
+    background-image: url("./images/sticky_read_locked_mine.svg");
+    transition: transform 0.5s ease-in-out;
+}
+.sticky_unread {
+    background-image: url("./images/sticky_unread.svg");
+    transition: transform 0.5s ease-in-out;
+}
+.sticky_unread_mine {
+    background-image: url("./images/sticky_unread_mine.svg");
+    transition: transform 0.5s ease-in-out;
+}
+.sticky_unread_locked {
+    background-image: url("./images/sticky_unread_locked.svg");
+    transition: transform 0.5s ease-in-out;
+}
+.sticky_unread_locked_mine {
+    background-image: url("./images/sticky_unread_locked_mine.svg");
+    transition: transform 0.5s ease-in-out;
+}
+
+.sticky_read:hover,
+.sticky_read_mine:hover,
+.sticky_read_locked:hover,
+.sticky_read_locked_mine:hover,
+.sticky_unread:hover,
+.sticky_unread_mine:hover,
+.sticky_unread_locked:hover,
+.sticky_unread_locked_mine:hover {
+    transform: scale(0.99);
+}
+
+/**/
+.topic_moved {
+    background-image: url("./images/topic_moved.svg");
+    transition: transform 0.5s ease-in-out;
+}
+.pm_read,
+.topic_read {
+    background-image: url("./images/topic_read.svg");
+    transition: transform 0.5s ease-in-out;
+}
+.topic_read_mine {
+    background-image: url("./images/topic_read_mine.svg");
+    transition: transform 0.5s ease-in-out;
+}
+.topic_read_hot {
+    background-image: url("./images/topic_read_hot.svg");
+    transition: transform 0.5s ease-in-out;
+}
+.topic_read_hot_mine {
+    background-image: url("./images/topic_read_hot_mine.svg");
+    transition: transform 0.5s ease-in-out;
+}
+.topic_read_locked {
+    background-image: url("./images/topic_read_locked.svg");
+    transition: transform 0.5s ease-in-out;
+}
+.topic_read_locked_mine {
+    background-image: url("./images/topic_read_locked_mine.svg");
+    transition: transform 0.5s ease-in-out;
+}
+.pm_unread,
+.topic_unread {
+    background-image: url("./images/topic_unread.svg");
+    transition: transform 0.5s ease-in-out;
+}
+.topic_unread_mine {
+    background-image: url("./images/topic_unread_mine.svg");
+    transition: transform 0.5s ease-in-out;
+}
+.topic_unread_hot {
+    background-image: url("./images/topic_unread_hot.svg");
+    transition: transform 0.5s ease-in-out;
+}
+.topic_unread_hot_mine {
+    background-image: url("./images/topic_unread_hot_mine.svg");
+    transition: transform 0.5s ease-in-out;
+}
+.topic_unread_locked {
+    background-image: url("./images/topic_unread_locked.svg");
+    transition: transform 0.5s ease-in-out;
+}
+.topic_unread_locked_mine {
+    background-image: url("./images/topic_unread_locked_mine.svg");
+    transition: transform 0.5s ease-in-out;
+}
+
+.topic_moved:hover,
+.pm_read:hover,
+.topic_read:hover,
+.topic_read_mine:hover,
+.topic_read_hot:hover,
+.topic_read_hot_mine:hover,
+.topic_read_locked:hover,
+.topic_read_locked_mine:hover,
+.pm_unread:hover,
+.topic_unread:hover,
+.topic_unread_mine:hover,
+.topic_unread_hot:hover,
+.topic_unread_hot_mine:hover,
+.topic_unread_locked:hover,
+.topic_unread_locked_mine:hover {
+    transform: scale(0.99);
+}
+
+.smilies {
+    vertical-align: middle;
+}
+/*--- 314r_standard derniere revision Juin 2025, par 314r --------------*/
+.navbar {
+    border-radius: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    opacity: 93%;
+    background-color: #d2d2d2;
+}
+
+div.navbar {
+    border-radius: 0;
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+    opacity: 93%;
+    background-color: #d2d2d2;
+}

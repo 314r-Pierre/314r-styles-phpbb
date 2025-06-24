@@ -1,0 +1,22 @@
+Juin 2025
+Style: 314r 3.3.15
+Pour: phpBB 3.3.15
+
+
+________________________________________________________________________
+Modifications
+
+1- Mise à jour des données fichier "style.cfg"
+2- Ajouté "@charset "utf-8";" en première ligne du fichier 314r.css
+3- Positionné la barre de navigation du haut en position fixe en haut de la page du forum.
+Donc modifié fichier "overall_header.html" en conséquence et ajouté des instructions css à la toute fin du fichier 314r.css
+4- Inséré fichier "navbar_footer.html" au dossier "template" du style 314r.
+5- Positionné la barre de navigation du bas en position fixe en bas de la page du forum.
+Donc modifié fichier "navbar_footer.html" en conséquence et ajouté des instructions css à la toute fin du fichier 314r.css
+6- Ligne 137 du fichier 314r.css, ajouté un arrondi à la page du forum.
+7- J'ai supprimé les notations "px" que j'avais laissé partout dans le fichier "314r.css" pour la valeur 0. J'écrivais 0px et maintenant j'ai écris seulement 0.
+_________________________________________________________________________
+
+Bon forum!
+314r (Pierre)
+admin@314r.ca
